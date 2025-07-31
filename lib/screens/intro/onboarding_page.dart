@@ -13,7 +13,7 @@ class OnboardingPage extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text(title),
+        title: Text(title, style: Theme.of(context).textTheme.bodyLarge),
         actions: [
           Switch(
             value: isDarkMode,
@@ -24,7 +24,7 @@ class OnboardingPage extends StatelessWidget {
       body: Center(
         child: Text(
           'Welcome to KostIQ',
-          style: Theme.of(context).textTheme.headlineSmall,
+          style: Theme.of(context).textTheme.bodyLarge,
         ),
       ),
     );
